@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root@nic
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    
+      
+protax:  
+  jwtCookieName: porTax
+  jwtSecret: proTaxSecretKey
+  jwtExpirationMs: 86400000 
+   
+      
